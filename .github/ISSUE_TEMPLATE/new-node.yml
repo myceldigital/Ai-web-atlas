@@ -1,0 +1,32 @@
+name: New node
+about: Propose a company, product, protocol, or infrastructure node
+title: "New node: "
+labels: [new-node]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Node name
+    validations:
+      required: true
+  - type: dropdown
+    id: relationship
+    attributes:
+      label: Relationship type
+      options:
+        - customer
+        - probable_customer
+        - peer
+        - supplier
+        - substrate
+        - category_marker
+        - uncertain
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Link public evidence and explain why this node belongs.
+    validations:
+      required: true
