@@ -1,0 +1,168 @@
+{
+  "schema_version": "1.0",
+  "last_updated": "2026-04-30",
+  "companies": [
+    {
+      "name": "Parallel Web Systems",
+      "category": "agent web infrastructure",
+      "map_version": "v1",
+      "relationship_type": "category_marker",
+      "confidence": "high",
+      "evidence_urls": ["https://parallel.ai/"],
+      "notes": "Source artifact and category-framing company for the atlas."
+    },
+    {
+      "name": "OpenAI",
+      "category": "frontier model lab",
+      "map_version": "v1",
+      "relationship_type": "peer",
+      "confidence": "medium",
+      "evidence_urls": ["https://openai.com/"],
+      "notes": "Important model and agent infrastructure actor; not automatically a customer relationship."
+    },
+    {
+      "name": "Anthropic",
+      "category": "frontier model lab",
+      "map_version": "v1",
+      "relationship_type": "peer",
+      "confidence": "medium",
+      "evidence_urls": ["https://www.anthropic.com/news/model-context-protocol"],
+      "notes": "Relevant because of Claude and the Model Context Protocol ecosystem."
+    },
+    {
+      "name": "Google DeepMind",
+      "category": "frontier model lab",
+      "map_version": "v1",
+      "relationship_type": "peer",
+      "confidence": "medium",
+      "evidence_urls": ["https://deepmind.google/"],
+      "notes": "Major model and agent research actor."
+    },
+    {
+      "name": "Microsoft",
+      "category": "cloud and enterprise AI",
+      "map_version": "v1",
+      "relationship_type": "supplier",
+      "confidence": "medium",
+      "evidence_urls": ["https://azure.microsoft.com/"],
+      "notes": "Cloud and AI infrastructure provider."
+    },
+    {
+      "name": "NVIDIA",
+      "category": "compute substrate",
+      "map_version": "v3",
+      "relationship_type": "substrate",
+      "confidence": "high",
+      "evidence_urls": ["https://www.nvidia.com/en-us/data-center/"],
+      "notes": "GPU and accelerator provider central to AI infrastructure."
+    },
+    {
+      "name": "TSMC",
+      "category": "semiconductor fabrication",
+      "map_version": "v3",
+      "relationship_type": "substrate",
+      "confidence": "high",
+      "evidence_urls": ["https://www.tsmc.com/"],
+      "notes": "Advanced semiconductor fabrication substrate."
+    },
+    {
+      "name": "ASML",
+      "category": "semiconductor equipment",
+      "map_version": "v3",
+      "relationship_type": "substrate",
+      "confidence": "high",
+      "evidence_urls": ["https://www.asml.com/"],
+      "notes": "Lithography equipment dependency for advanced semiconductors."
+    },
+    {
+      "name": "CoreWeave",
+      "category": "AI cloud",
+      "map_version": "v3",
+      "relationship_type": "supplier",
+      "confidence": "medium",
+      "evidence_urls": ["https://www.coreweave.com/"],
+      "notes": "AI cloud and compute infrastructure actor."
+    },
+    {
+      "name": "Cursor",
+      "category": "coding agents",
+      "map_version": "v2",
+      "relationship_type": "category_marker",
+      "confidence": "medium",
+      "evidence_urls": ["https://www.cursor.com/"],
+      "notes": "Representative AI coding environment in the agent ecosystem."
+    },
+    {
+      "name": "Replit",
+      "category": "coding agents",
+      "map_version": "v2",
+      "relationship_type": "category_marker",
+      "confidence": "medium",
+      "evidence_urls": ["https://replit.com/"],
+      "notes": "Representative AI coding and software creation environment."
+    },
+    {
+      "name": "Vercel v0",
+      "category": "design and coding agents",
+      "map_version": "v2",
+      "relationship_type": "category_marker",
+      "confidence": "medium",
+      "evidence_urls": ["https://v0.dev/"],
+      "notes": "Representative app-generation and UI agent tool."
+    },
+    {
+      "name": "Palantir",
+      "category": "defense and enterprise AI",
+      "map_version": "v3",
+      "relationship_type": "peer",
+      "confidence": "medium",
+      "evidence_urls": ["https://www.palantir.com/platforms/aip/"],
+      "notes": "Important government, defense, and enterprise AI platform; customer-versus-peer relationship should not be assumed."
+    },
+    {
+      "name": "Anduril",
+      "category": "defense AI",
+      "map_version": "v3",
+      "relationship_type": "category_marker",
+      "confidence": "medium",
+      "evidence_urls": ["https://www.anduril.com/"],
+      "notes": "Defense autonomy and AI-native systems actor."
+    },
+    {
+      "name": "Shield AI",
+      "category": "defense AI",
+      "map_version": "v3",
+      "relationship_type": "category_marker",
+      "confidence": "medium",
+      "evidence_urls": ["https://shield.ai/"],
+      "notes": "Autonomy and defense AI actor."
+    },
+    {
+      "name": "Helsing",
+      "category": "defense AI",
+      "map_version": "v3",
+      "relationship_type": "category_marker",
+      "confidence": "medium",
+      "evidence_urls": ["https://helsing.ai/"],
+      "notes": "European defense AI company."
+    },
+    {
+      "name": "Stripe",
+      "category": "payments",
+      "map_version": "v2",
+      "relationship_type": "category_marker",
+      "confidence": "medium",
+      "evidence_urls": ["https://stripe.com/"],
+      "notes": "Representative payments infrastructure relevant to agent commerce."
+    },
+    {
+      "name": "Shopify",
+      "category": "commerce",
+      "map_version": "v2",
+      "relationship_type": "category_marker",
+      "confidence": "medium",
+      "evidence_urls": ["https://www.shopify.com/"],
+      "notes": "Commerce platform relevant to agent-mediated purchasing."
+    }
+  ]
+}
