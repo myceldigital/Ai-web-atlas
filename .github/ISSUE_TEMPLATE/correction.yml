@@ -1,0 +1,19 @@
+name: Correction
+about: Correct a classification, source, node, or claim
+title: "Correction: "
+labels: [correction]
+body:
+  - type: textarea
+    id: issue
+    attributes:
+      label: What is wrong?
+      description: Describe the claim, node, or classification that should change.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Link public sources supporting the correction.
+    validations:
+      required: true
