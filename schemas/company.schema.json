@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/myceldigital/Ai-web-atlas/schemas/company.schema.json",
+  "title": "AI Web Atlas company record",
+  "type": "object",
+  "required": ["name", "category", "map_version", "relationship_type", "confidence", "evidence_urls", "notes"],
+  "properties": {
+    "name": { "type": "string", "minLength": 1 },
+    "category": { "type": "string", "minLength": 1 },
+    "map_version": { "type": "string", "pattern": "^v[0-9]+" },
+    "relationship_type": {
+      "type": "string",
+      "enum": ["customer", "probable_customer", "peer", "supplier", "substrate", "category_marker", "uncertain"]
+    },
+    "confidence": { "type": "string", "enum": ["low", "medium", "high"] },
+    "evidence_urls": { "type": "array", "items": { "type": "string", "format": "uri" } },
+    "notes": { "type": "string" }
+  },
+  "additionalProperties": true
+}
