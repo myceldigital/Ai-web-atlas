@@ -2,11 +2,9 @@
 
 > A critical, versioned atlas of the AI-agent web: reconstructing Parallel Web Systems’ April 2026 market-map poster, then expanding it to show the customers, peers, infrastructure layers, and physical substrate that corporate logo maps usually blur together.
 
-![AI Web Atlas v3](./maps/v3-defense-and-substrate.svg)
-
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Code & Data: MIT](https://img.shields.io/badge/Code%20%26%20Data-MIT-blue.svg)](./LICENSE-MIT)
-[![Atlas Version](https://img.shields.io/badge/Atlas-v3-red.svg)](./maps/v3-defense-and-substrate.svg)
+[![Atlas Version](https://img.shields.io/badge/Atlas-v3-red.svg)](./maps/source/v3-defense-and-substrate.mmd)
 [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](#contributing)
 
 ---
@@ -39,16 +37,16 @@ AI Web Atlas separates the layers so the map becomes harder to use as marketing 
 
 ## The maps
 
+The canonical map sources are Mermaid files in [`maps/source/`](./maps/source/). They can be rendered locally with `npm run render`.
+
 ### v1 — Transcription layer
 
-[`maps/v1-transcription.svg`](./maps/v1-transcription.svg)  
 [`maps/source/v1-transcription.mmd`](./maps/source/v1-transcription.mmd)
 
 A structured approximation of the original poster’s visible topology. This version preserves the source artifact’s broad categories and approximate layout. Unclear or unverified slots are marked as uncertain rather than silently presented as fact.
 
 ### v2 — Panel critique
 
-[`maps/v2-panel-critique.svg`](./maps/v2-panel-critique.svg)  
 [`maps/source/v2-panel-critique.mmd`](./maps/source/v2-panel-critique.mmd)  
 [`debates/v2-panel-critique.md`](./debates/v2-panel-critique.md)
 
@@ -58,7 +56,6 @@ v2 separates confirmed customers, probable customers, peers, infrastructure prov
 
 ### v3 — Defense and physical substrate
 
-[`maps/v3-defense-and-substrate.svg`](./maps/v3-defense-and-substrate.svg)  
 [`maps/source/v3-defense-and-substrate.mmd`](./maps/source/v3-defense-and-substrate.mmd)  
 [`debates/v3-defense-and-substrate.md`](./debates/v3-defense-and-substrate.md)
 
@@ -148,14 +145,10 @@ Ai-web-atlas/
 ├── ROADMAP.md
 ├── package.json
 ├── Makefile
-├── maps/
-│   ├── v1-transcription.svg
-│   ├── v2-panel-critique.svg
-│   ├── v3-defense-and-substrate.svg
-│   └── source/
-│       ├── v1-transcription.mmd
-│       ├── v2-panel-critique.mmd
-│       └── v3-defense-and-substrate.mmd
+├── maps/source/
+│   ├── v1-transcription.mmd
+│   ├── v2-panel-critique.mmd
+│   └── v3-defense-and-substrate.mmd
 ├── data/
 │   └── companies.json
 ├── findings/
@@ -171,14 +164,13 @@ Ai-web-atlas/
 
 ## Working with the maps
 
-The rendered maps are SVG files in [`maps/`](./maps/). Mermaid source files are stored in [`maps/source/`](./maps/source/).
+Mermaid source files are stored in [`maps/source/`](./maps/source/).
 
 To edit a map:
 
 1. Edit the relevant `.mmd` file.
 2. Render to SVG with Mermaid CLI or Mermaid Live.
-3. Update the matching SVG.
-4. Open a pull request explaining the change and citing evidence.
+3. Open a pull request explaining the change and citing evidence.
 
 ---
 
