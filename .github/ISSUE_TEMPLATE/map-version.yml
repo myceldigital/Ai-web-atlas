@@ -1,0 +1,26 @@
+name: New atlas version
+about: Propose a new atlas version or major map expansion
+title: "Version proposal: "
+labels: [version-proposal]
+body:
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What question should the new version answer?
+    validations:
+      required: true
+  - type: textarea
+    id: panel
+    attributes:
+      label: Proposed panel archetypes
+      description: Which perspectives should stress-test this version?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence base
+      description: What sources would support the new version?
+    validations:
+      required: true
