@@ -1,0 +1,14 @@
+{
+  "name": "ai-web-atlas",
+  "version": "3.0.0",
+  "private": true,
+  "description": "A critical, versioned atlas of the AI-agent web.",
+  "scripts": {
+    "render": "bash scripts/render-maps.sh",
+    "validate:data": "python3 scripts/validate-data.py"
+  },
+  "devDependencies": {
+    "@mermaid-js/mermaid-cli": "latest"
+  },
+  "license": "SEE LICENSE IN LICENSE"
+}
