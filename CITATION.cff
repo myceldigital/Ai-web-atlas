@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: If you use this repository, please cite it as below.
+title: AI Web Atlas
+authors:
+  - name: Contributors
+year: 2026
+version: 3.0.0
+repository-code: https://github.com/myceldigital/Ai-web-atlas
+license: CC-BY-4.0
