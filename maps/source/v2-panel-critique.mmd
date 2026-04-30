@@ -1,0 +1,45 @@
+flowchart TD
+  subgraph Claims[Framing under critique]
+    SecondUser["Web's second user"]
+    AgentUser[Agentic web user]
+    BotHistory[Prior bot and crawler traffic]
+  end
+
+  subgraph Relationships[Relationship types]
+    Customers[Confirmed customers]
+    Probable[Probable customers]
+    Peers[Peers and competitors]
+    Suppliers[Suppliers]
+    Markers[Category markers]
+    Unknown[Uncertain nodes]
+  end
+
+  subgraph Categories[Expanded agent categories]
+    Coding[Coding agents]
+    Browser[Browser agents]
+    Voice[Voice agents]
+    Support[Customer support]
+    Evals[Evals and observability]
+    Memory[Memory and state]
+    Identity[Identity and permissions]
+    Payments[Payments]
+  end
+
+  SecondUser --> AgentUser
+  BotHistory -. qualifies .-> SecondUser
+  AgentUser --> Categories
+  Categories --> Relationships
+
+  Coding --> Cursor[Cursor]
+  Coding --> Replit[Replit]
+  Coding --> V0[Vercel v0]
+  Payments --> Stripe[Stripe]
+  Browser --> BrowserUse[Browser-use / framework]
+  Evals --> Observability[LangSmith / Braintrust / evals]
+  Memory --> State[Memory stores]
+  Identity --> Permissions[Human approval and scoped credentials]
+
+  classDef critique fill:#e7f3ff,stroke:#1f6feb
+  classDef warning fill:#fff4d6,stroke:#d9822b,stroke-dasharray:5 5
+  class BotHistory,Unknown warning
+  class Categories,Relationships critique
