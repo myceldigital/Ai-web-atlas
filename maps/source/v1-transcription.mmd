@@ -1,0 +1,38 @@
+flowchart TD
+  subgraph Source[Parallel Web source artifact]
+    Parallel[Parallel Web Systems]
+    Poster[Series B market-map poster]
+    Claim["The web's second user is online"]
+  end
+
+  subgraph AgentLayer[Agent web layer]
+    Agents[AI agents]
+    Search[Web retrieval]
+    Browsing[Browser and web actions]
+    APIs[Research APIs]
+    Tools[Tool calling]
+  end
+
+  subgraph AppLayer[Application categories]
+    Coding[Coding agents]
+    Commerce[Commerce]
+    Productivity[Productivity]
+    Finance[Finance]
+    Research[Research]
+  end
+
+  Parallel --> Poster --> Claim
+  Claim --> Agents
+  Agents --> Search
+  Agents --> Browsing
+  Agents --> APIs
+  Agents --> Tools
+  Search --> Research
+  Browsing --> Commerce
+  Tools --> Coding
+  Tools --> Productivity
+  APIs --> Finance
+
+  classDef uncertain fill:#fff4d6,stroke:#d9822b,stroke-dasharray:5 5
+  classDef source fill:#e8f0ff,stroke:#3157a4
+  class Poster,Claim source
