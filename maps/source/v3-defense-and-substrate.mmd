@@ -1,0 +1,55 @@
+flowchart TD
+  subgraph AgentWeb[AI Web Atlas v3]
+    Agents[Agentic web layer]
+    Apps[Applications]
+    Infra[Agent infrastructure]
+  end
+
+  subgraph Defense[Defense and national-security AI]
+    Palantir[Palantir AIP]
+    Anduril[Anduril]
+    ShieldAI[Shield AI]
+    Helsing[Helsing]
+    C2[Command and control]
+    Autonomy[Autonomy]
+    Intel[Intelligence workflows]
+  end
+
+  subgraph Substrate[Physical substrate]
+    Chips[Semiconductors]
+    GPUs[GPUs and accelerators]
+    Datacenters[Datacenters]
+    Power[Power generation]
+    Cooling[Cooling and water]
+    Networks[Fiber and subsea cables]
+    Minerals[Critical minerals]
+    Controls[Export controls]
+  end
+
+  Agents --> Apps
+  Agents --> Infra
+  Infra --> Defense
+  Apps --> Defense
+
+  Defense --> C2
+  Defense --> Autonomy
+  Defense --> Intel
+  Palantir --> C2
+  Anduril --> Autonomy
+  ShieldAI --> Autonomy
+  Helsing --> Intel
+
+  Substrate --> Agents
+  Substrate --> Defense
+  Chips --> GPUs
+  GPUs --> Datacenters
+  Power --> Datacenters
+  Cooling --> Datacenters
+  Minerals --> Chips
+  Controls --> Chips
+  Networks --> Agents
+
+  classDef defense fill:#ffe7e7,stroke:#b42318
+  classDef substrate fill:#1f2937,color:#ffffff,stroke:#111827
+  class Defense,Palantir,Anduril,ShieldAI,Helsing,C2,Autonomy,Intel defense
+  class Substrate,Chips,GPUs,Datacenters,Power,Cooling,Networks,Minerals,Controls substrate
